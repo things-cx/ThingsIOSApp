@@ -1,0 +1,39 @@
+{
+    "name": "things",
+    "displayName": "Things",
+    "version": "0.0.1",
+    "description": "Keep up to date by following exactly what you want.",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "code-push-register": "code-push register",
+        "code-push-add": "code-push app add Things ios cordova",
+        "code-push-release": "code-push release-cordova Things ios --deploymentName=Staging --description='staging description'"
+    },
+    "author": "Things Team",
+    "license": "UNLICENSED",
+    "dependencies": {
+        "code-push": "^2.0.1-beta",
+        "cordova-ios": "^4.4.0",
+        "cordova-plugin-code-push": "^1.9.5-beta",
+        "cordova-plugin-compat": "^1.1.0",
+        "cordova-plugin-device": "^1.1.6",
+        "cordova-plugin-dialogs": "^1.3.3",
+        "cordova-plugin-file": "^4.3.3",
+        "cordova-plugin-file-transfer": "^1.6.3",
+        "cordova-plugin-whitelist": "^1.3.2",
+        "cordova-plugin-zip": "^3.1.0"
+    },
+    "devDependencies": {
+        "code-push-cli": "latest"
+    },
+    "cordova": {
+        "plugins": {
+            "cordova-plugin-whitelist": {},
+            "cordova-plugin-code-push": {}
+        },
+        "platforms": [
+            "ios"
+        ]
+    }
+}
